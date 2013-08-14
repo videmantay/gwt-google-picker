@@ -32,7 +32,7 @@ public final class BaseResult extends JavaScriptObject {
    * @return Information about the view.
    */
   public ViewToken getViewToken() {
-    return ViewToken.create(getProperty("viewToken").<JsArray>cast());
+    return ViewToken.create(getProperty("viewToken").<JsArray<?>>cast());
   }
 
   /**

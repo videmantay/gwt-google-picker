@@ -46,11 +46,9 @@ public class AjaxLoader {
     }-*/;
 
     public final native void setLanguage(String language) /*-{
-      // TODO(zundel): try to incorporate w/ GWT locale?
       this.language = language;
     }-*/;
 
-    // TODO(zundel): the docs are a little confusing on this one.
     public final native void setNoCss(boolean value) /*-{
       this.nocss = value;
     }-*/;
@@ -253,7 +251,6 @@ public class AjaxLoader {
    * Called back when the jsapi is finished loaded. It must kick of any API
    * loads that have been queued while waiting on jsapi to finish loading.
    */
-  @SuppressWarnings("unused")
   private static void onLoadCallback() {
     loaded = true;
 

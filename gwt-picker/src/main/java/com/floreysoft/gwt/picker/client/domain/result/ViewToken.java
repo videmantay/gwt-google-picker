@@ -18,12 +18,12 @@
 
 package com.floreysoft.gwt.picker.client.domain.result;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.floreysoft.gwt.picker.client.domain.ViewId;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Contains information about the picker and the user query.
@@ -56,7 +56,7 @@ public final class ViewToken extends JavaScriptObject {
     return result;
   }
 
-  public native static ViewToken create(JsArray array) /*-{
+  public native static ViewToken create(JsArray<?> array) /*-{
     return array && array.length >= 3 ? new Object({
       viewId: array[0],
       viewOptions: array[2]
@@ -67,7 +67,7 @@ public final class ViewToken extends JavaScriptObject {
     return this.viewOptions;
   }-*/;
 
-  private native void copyViewOptions(Map target) /*-{
+  private native void copyViewOptions(Map<String, String> target) /*-{
     for (var key in this.viewOptions) {
       target.@java.util.Map::put(Ljava/lang/Object;Ljava/lang/Object;)(key, this.viewOptions[key]);
     }

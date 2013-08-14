@@ -22,7 +22,6 @@ import com.floreysoft.gwt.picker.client.domain.Action;
 import com.floreysoft.gwt.picker.client.domain.result.BaseResult;
 import com.floreysoft.gwt.picker.client.domain.result.ViewToken;
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.user.client.Window;
 
 /**
  * Dispatches the callback to the receiver.

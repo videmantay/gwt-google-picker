@@ -19,9 +19,6 @@
 package com.floreysoft.gwt.picker.client.domain;
 
 import com.floreysoft.gwt.picker.client.callback.AbstractPickerCallback;
-import com.floreysoft.gwt.picker.client.callback.PickerCallback;
-import com.floreysoft.gwt.picker.client.domain.result.BaseResult;
-import com.floreysoft.gwt.picker.client.domain.result.ViewToken;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -219,35 +216,6 @@ public final class PickerBuilder extends JavaScriptObject {
 		this.setCallback(this.callbackQueue);
 		return this;
   }-*/;
-
-  /**
-   * Set the callback method called when the user picks and item (or items), or
-   * cancels. The callback method receives a single callback object. The
-   * structure of the callback object is described in the <a
-   * href="http://code.google.com/intl/de-DE/apis/picker/docs/results.html">JSON
-   * Guide</a>
-   * 
-   * @param callback
-   *          The callback to add
-   * @return The picker builder instance
-   * @deprecated Use
-   *             {@link PickerBuilder#addCallback(com.floreysoft.gwt.picker.client.callback.AbstractPickerCallback)}
-   *             instead
-   */
-  public PickerBuilder setCallback(final PickerCallback callback) {
-    addCallback(new AbstractPickerCallback() {
-      @Override
-      public void onPicked(ViewToken viewToken, BaseResult baseResult) {
-        callback.onPicked(viewToken, baseResult);
-      }
-
-      @Override
-      public void onCanceled() {
-        callback.onCanceled();
-      }
-    });
-    return this;
-  }
 
   /**
    * ToDo: What kind of document could be set here? Set the document.

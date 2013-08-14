@@ -18,7 +18,6 @@
 
 package com.floreysoft.gwt.picker.client.domain;
 
-import com.floreysoft.gwt.picker.client.callback.PickerCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -33,18 +32,6 @@ public final class Picker extends JavaScriptObject {
    */
   public native boolean isVisible() /*-{
     return this.isVisible();
-  }-*/;
-
-  /**
-   * Specify the callback method called whenever the user has picked an item (or canceled.)
-   *
-   * @param callback The callback to execute
-   * @deprecated Use {@link PickerBuilder#addCallback(com.floreysoft.gwt.picker.client.callback.AbstractPickerCallback)} instead
-   */
-  public native void setCallback(PickerCallback callback) /*-{
-    return this.setCallback(function(object) {
-      @com.floreysoft.gwt.picker.client.callback.PickerCallbackDispatcher::dispatch(Lcom/floreysoft/gwt/picker/client/callback/PickerCallback;Lcom/google/gwt/core/client/JavaScriptObject;)(callback, object);
-    });
   }-*/;
 
   /**
