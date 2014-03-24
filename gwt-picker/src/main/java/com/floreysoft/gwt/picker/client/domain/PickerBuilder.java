@@ -29,183 +29,183 @@ import com.google.gwt.core.client.JavaScriptObject;
  * World</a> example for typical use.
  */
 public final class PickerBuilder extends JavaScriptObject {
-  protected PickerBuilder() {
-  }
+	protected PickerBuilder() {
+	}
 
-  /**
-   * Add a view to the navigation pane.
-   * 
-   * @param view
-   *          The view add
-   * @return The picker builder instance
-   */
-  public native PickerBuilder addView(JavaScriptObject view) /*-{
+	/**
+	 * Add a view to the navigation pane.
+	 * 
+	 * @param view
+	 *            The view add
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder addView(JavaScriptObject view) /*-{
 		return this.addView(view);
-  }-*/;
+	}-*/;
 
-  /**
-   * Add a view to the navigation pane.
-   * 
-   * @param viewId
-   *          The view id to add
-   * @return The picker builder instance
-   */
-  public native PickerBuilder addView(ViewId viewId) /*-{
+	/**
+	 * Add a view to the navigation pane.
+	 * 
+	 * @param viewId
+	 *            The view id to add
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder addView(ViewId viewId) /*-{
 		return this
 				.addView(viewId.@com.floreysoft.gwt.picker.client.domain.ViewId::getValue()());
-  }-*/;
+	}-*/;
 
-  /**
-   * Disable a picker feature.
-   * 
-   * @param feature
-   *          The feature to disable
-   * @return The builder instance
-   */
-  public native PickerBuilder disableFeature(Feature feature) /*-{
+	/**
+	 * Disable a picker feature.
+	 * 
+	 * @param feature
+	 *            The feature to disable
+	 * @return The builder instance
+	 */
+	public native PickerBuilder disableFeature(Feature feature) /*-{
 		return this
 				.disableFeature(feature.@com.floreysoft.gwt.picker.client.domain.Feature::getValue()());
-  }-*/;
+	}-*/;
 
-  /**
-   * Enable a picker feature.
-   * 
-   * @param feature
-   *          The feature to enable
-   * @return The builder instance
-   */
-  public native PickerBuilder enableFeature(Feature feature) /*-{
+	/**
+	 * Enable a picker feature.
+	 * 
+	 * @param feature
+	 *            The feature to enable
+	 * @return The builder instance
+	 */
+	public native PickerBuilder enableFeature(Feature feature) /*-{
 		return this
 				.enableFeature(feature.@com.floreysoft.gwt.picker.client.domain.Feature::getValue()());
-  }-*/;
+	}-*/;
 
-  /**
-   * Check if a picker feature is enabled.
-   * 
-   * @param feature
-   *          The feature to check
-   * @return True if enabled. Otherwise false
-   */
-  public native boolean isFeatureEnabled(Feature feature) /*-{
+	/**
+	 * Check if a picker feature is enabled.
+	 * 
+	 * @param feature
+	 *            The feature to check
+	 * @return True if enabled. Otherwise false
+	 */
+	public native boolean isFeatureEnabled(Feature feature) /*-{
 		return this
 				.isFeatureEnabled(feature.@com.floreysoft.gwt.picker.client.domain.Feature::getValue()());
-  }-*/;
+	}-*/;
 
-  /**
-   * Add a ViewGroup to the top-level navigation pane.
-   * 
-   * @param viewGroup
-   *          The view group to add
-   * @return The picker builder instance
-   */
-  public native PickerBuilder addViewGroup(ViewGroup viewGroup) /*-{
+	/**
+	 * Add a ViewGroup to the top-level navigation pane.
+	 * 
+	 * @param viewGroup
+	 *            The view group to add
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder addViewGroup(ViewGroup viewGroup) /*-{
 		return this.addViewGroup(viewGroup);
-  }-*/;
+	}-*/;
 
-  /**
-   * Construct the Picker object.
-   * 
-   * @return The Picker object is returned.
-   */
-  public native Picker build() /*-{
+	/**
+	 * Construct the Picker object.
+	 * 
+	 * @return The Picker object is returned.
+	 */
+	public native Picker build() /*-{
 		// Create picker
 		return this.build();
 
-  }-*/;
+	}-*/;
 
-  /**
-   * @return the relay URL, used for gadgets.rpc.
-   */
-  public native String getRelayUrl() /*-{
+	/**
+	 * @return the relay URL, used for gadgets.rpc.
+	 */
+	public native String getRelayUrl() /*-{
 		return this.getRelayUrl();
-  }-*/;
+	}-*/;
 
-  /**
-   * Set the relay URL, used for gadgets.rpc.
-   * 
-   * @param url
-   *          The relay url
-   * @return The picker builder
-   */
-  public native PickerBuilder setRelayUrl(String url) /*-{
+	/**
+	 * Set the relay URL, used for gadgets.rpc.
+	 * 
+	 * @param url
+	 *            The relay url
+	 * @return The picker builder
+	 */
+	public native PickerBuilder setRelayUrl(String url) /*-{
 		return this.setRelayUrl(url);
-  }-*/;
+	}-*/;
 
-  /**
-   * Set the preferred dialog size. The dialog will be auto-centered. It has a
-   * minimum size of (566,350) and a maximum size of (1051,650).
-   * 
-   * @return The picker builder instance
-   */
-  public native PickerBuilder setSize() /*-{
+	/**
+	 * Set the preferred dialog size. The dialog will be auto-centered. It has a
+	 * minimum size of (566,350) and a maximum size of (1051,650).
+	 * 
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder setSize() /*-{
 		return this.setSize();
-  }-*/;
+	}-*/;
 
-  /**
-   * Specify an album ID for photo uploads. <a href=
-   * "http://code.google.com/apis/picasaweb/docs/2.0/developers_guide_protocol.html#Albums"
-   * >See Picasa Web Albums Data API documentation</a> for more information
-   * about albums.
-   * 
-   * @param albumId
-   *          The album ID
-   * @return The picker builder instance
-   */
-  public native PickerBuilder setUploadToAlbumId(String albumId) /*-{
+	/**
+	 * Specify an album ID for photo uploads. <a href=
+	 * "http://code.google.com/apis/picasaweb/docs/2.0/developers_guide_protocol.html#Albums"
+	 * >See Picasa Web Albums Data API documentation</a> for more information
+	 * about albums.
+	 * 
+	 * @param albumId
+	 *            The album ID
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder setUploadToAlbumId(String albumId) /*-{
 		return this.setUploadToAlbumId(albumId);
-  }-*/;
+	}-*/;
 
-  /**
-   * @return The dialog title.
-   */
-  public native String getTitle() /*-{
+	/**
+	 * @return The dialog title.
+	 */
+	public native String getTitle() /*-{
 		return this.getTitle();
-  }-*/;
+	}-*/;
 
-  /**
-   * Set the dialog title.
-   * 
-   * @param title
-   *          The title
-   * @return The picker builder instance
-   */
-  public native PickerBuilder setTitle(String title) /*-{
+	/**
+	 * Set the dialog title.
+	 * 
+	 * @param title
+	 *            The title
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder setTitle(String title) /*-{
 		return this.setTitle(title);
-  }-*/;
+	}-*/;
 
-  /**
-   * Disable the title bar from being shown. To re-enable, call setTitle with a
-   * non-empty title or undefined.
-   * 
-   * @return The picker builder instance
-   */
-  public native PickerBuilder hideTitleBar() /*-{
+	/**
+	 * Disable the title bar from being shown. To re-enable, call setTitle with
+	 * a non-empty title or undefined.
+	 * 
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder hideTitleBar() /*-{
 		return this.hideTitleBar();
-  }-*/;
+	}-*/;
 
-  /**
-   * For services where individual items are protected by access control (i.e.
-   * Google Docs), time-limited access to items constrained by the argument is
-   * granted. By default, access from any domain is granted. Once the user has
-   * selected an item, applications in the granted domain can access the items
-   * using the Google Documents List API. The token is valid for 24 hours.
-   * 
-   * @param domain
-   *          The domain
-   * @return The picker builder instance
-   */
-  public native PickerBuilder grantDocsTokenToDomain(String domain) /*-{
+	/**
+	 * For services where individual items are protected by access control (i.e.
+	 * Google Docs), time-limited access to items constrained by the argument is
+	 * granted. By default, access from any domain is granted. Once the user has
+	 * selected an item, applications in the granted domain can access the items
+	 * using the Google Documents List API. The token is valid for 24 hours.
+	 * 
+	 * @param domain
+	 *            The domain
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder grantDocsTokenToDomain(String domain) /*-{
 		return this.grantDocsTokenToDomain(domain);
-  }-*/;
+	}-*/;
 
-  /**
-   * Adds a callback to the picker
-   * 
-   * @param callback
-   *          The callback to add
-   * @return The picker builder instance
-   */
-  public native PickerBuilder addCallback(AbstractPickerCallback callback) /*-{
+	/**
+	 * Adds a callback to the picker
+	 * 
+	 * @param callback
+	 *            The callback to add
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder addCallback(AbstractPickerCallback callback) /*-{
 		var oldCallbackQueue = this['callbackQueue'];
 		this.callbackQueue = function(object) {
 			if (oldCallbackQueue) {
@@ -215,80 +215,98 @@ public final class PickerBuilder extends JavaScriptObject {
 		};
 		this.setCallback(this.callbackQueue);
 		return this;
-  }-*/;
+	}-*/;
 
-  /**
-   * ToDo: What kind of document could be set here? Set the document.
-   * 
-   * @param document
-   *          The document to set
-   * @return The picker builder instance
-   */
-  public native PickerBuilder setDocument(JavaScriptObject document) /*-{
+	/**
+	 * ToDo: What kind of document could be set here? Set the document.
+	 * 
+	 * @param document
+	 *            The document to set
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder setDocument(JavaScriptObject document) /*-{
 		return this.setDocument(document);
-  }-*/;
+	}-*/;
 
-  /**
-   * ISO 639 language code. If the language is not supported, en-US is used.
-   * This method provides an alternative to setting the locale at google.load()
-   * time. See the <a
-   * href="http://code.google.com/intl/de-DE/apis/picker/docs/index.html#i18n"
-   * >Developer's Guide</a> for a list of supported locales.
-   * 
-   * @param locale
-   *          The locale to set
-   * @return The picker builder instance
-   */
-  public native PickerBuilder setLocale(String locale) /*-{
+	/**
+	 * ISO 639 language code. If the language is not supported, en-US is used.
+	 * This method provides an alternative to setting the locale at
+	 * google.load() time. See the <a href=
+	 * "http://code.google.com/intl/de-DE/apis/picker/docs/index.html#i18n"
+	 * >Developer's Guide</a> for a list of supported locales.
+	 * 
+	 * @param locale
+	 *            The locale to set
+	 * @return The picker builder instance
+	 */
+	public native PickerBuilder setLocale(String locale) /*-{
 		return this.setLocale(locale);
-  }-*/;
+	}-*/;
 
-  /**
-   * Specify an email address, domain name, or a Google profile ID to use as the
-   * authenticated user. The user must already be logged into this account.
-   * 
-   * @param user
-   *          Specify an email address, domain name, or a Google profile ID to
-   *          use as the authenticated user. The user must already be logged
-   *          into this account.
-   * @return The picker builder
-   */
-  public native PickerBuilder setAuthUser(String user) /*-{
+	/**
+	 * Specify an email address, domain name, or a Google profile ID to use as
+	 * the authenticated user. The user must already be logged into this
+	 * account.
+	 * 
+	 * @param user
+	 *            Specify an email address, domain name, or a Google profile ID
+	 *            to use as the authenticated user. The user must already be
+	 *            logged into this account.
+	 * @return The picker builder
+	 */
+	public native PickerBuilder setAuthUser(String user) /*-{
 		return this.setAuthUser(user);
-  }-*/;
+	}-*/;
 
-  /**
-   * Sets the Google Drive App ID needed to allow application to access the
-   * user's files via the Google Drive API.
-   * 
-   * @param driveAppId
-   *          Sets the Google Drive App ID needed to allow application to access
-   *          the user's files via the Google Drive API.
-   * @return The picker builder
-   */
-  public native PickerBuilder setAppId(String driveAppId) /*-{
+	/**
+	 * Sets the Google Drive App ID needed to allow application to access the
+	 * user's files via the Google Drive API.
+	 * 
+	 * @param driveAppId
+	 *            Sets the Google Drive App ID needed to allow application to
+	 *            access the user's files via the Google Drive API.
+	 * @return The picker builder
+	 */
+	public native PickerBuilder setAppId(String driveAppId) /*-{
 		return this.setAppId(driveAppId);
-  }-*/;
+	}-*/;
 
-  /**
-   * Set the list of MIME types which will be selectable. Use commas to separate
-   * MIME types if more than one is required.
-   * 
-   * @param mimetypes
-   *          the list of MIME types which will be selectable. Use commas to
-   *          separate MIME types if more than one is required
-   * @return The picker builder
-   */
-  public native PickerBuilder setSelectableMimeTypes(String mimeTypes) /*-{
+	/**
+	 * Set the list of MIME types which will be selectable. Use commas to
+	 * separate MIME types if more than one is required.
+	 * 
+	 * @param mimetypes
+	 *            the list of MIME types which will be selectable. Use commas to
+	 *            separate MIME types if more than one is required
+	 * @return The picker builder
+	 */
+	public native PickerBuilder setSelectableMimeTypes(String mimeTypes) /*-{
 		return this.setSelectableMimeTypes(mimeTypes);
-  }-*/;
+	}-*/;
 
-  /**
-   * @return A new instance of the picker builder
-   */
-  public native static PickerBuilder create() /*-{
+	/**
+	 * @return A new instance of the picker builder
+	 */
+	public native static PickerBuilder create() /*-{
 		var builder = new $wnd.google.picker.PickerBuilder();
 		builder.callbacks = new Array();
 		return builder;
-  }-*/;
+	}-*/;
+
+	public native PickerBuilder setOAuthToken(String oauthToken) /*-{
+		return this.setOAuthToken(oauthToken);
+	}-*/;
+
+	public native String getOAuthToken() /*-{
+		return this.getOAuthToken();
+	}-*/;
+
+	public native PickerBuilder setDeveloperKey(String developerKey) /*-{
+		return this.setDeveloperKey(developerKey);
+	}-*/;
+
+	public native String getDeveloperKey() /*-{
+		return this.getDeveloperKey();
+	}-*/;
+
 }
